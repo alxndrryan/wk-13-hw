@@ -2,7 +2,7 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-    host: "locahost",
+    host: "localhost",
     port: 3306,
     user: "root",
     password: "Wheeloftime2020",
@@ -15,7 +15,7 @@ connection.connect(function(err) {
         console.error("error connection: " + err.stack);
         return;
     }
-    console.log("connected as id " + connection.threadId)''
+    console.log("connected as id " + connection.threadId);
 });
 
 // Export connection for our ORM to use
